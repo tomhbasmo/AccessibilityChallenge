@@ -579,6 +579,19 @@ margin-left: 42vw !important;
     position: absolute; top:0; left: 0; width: 80%; height: 90%;
      
     }
+    .CalendarIcon{
+        transform: translateX(0.5vw) !important;
+       }
+       @media only screen and (max-width: 1000px){
+       .CalendarIcon{
+        transform: translateX(1.5vw) !important;
+       }
+    }
+    @media only screen and (max-width: 950px){
+        .CalendarIcon{
+         transform: translateX(2.0vw) !important;
+        }
+     }
 
 @media only screen and (max-width: 860px){
     .topbar>ul>li>a{
@@ -595,12 +608,24 @@ margin-left: 42vw !important;
     #CalendarMenu{
         margin-left: 1vw !important;
     }
+    .CalendarIcon{
+width: 50px !important;
+    }
+    .ChatIkon{
+        width: 55px !important;
+    }
+    .epostIkon{
+        width: 50px!important;
+    }
+    .minsideIkon{
+        width: 50px!important;
+    }
 #ChatMenu{
-    margin-left: 14vw;
+    margin-left: 12vw;
     margin-right: 0 0 0 0 !important;
 }
 #Epost{
-    margin-left: 14vw;
+    margin-left: 16vw;
     margin-right: 0 0 0 0 !important;
 }
 #MinSide{
@@ -907,7 +932,6 @@ body{
     }
     input[type=search]{
         margin-right:0px;
-        position: static;
     }
 
     .topbar{
