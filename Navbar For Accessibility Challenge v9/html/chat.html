@@ -8,10 +8,19 @@
     <meta name="description" content="LMS skole digital læringsplattform">
     <meta name="viewport" content="width=device-width, initial-scale=1" user-scalable=yes>
     <link rel="stylesheet" href="../css/mystyle.css">
+    <link href='https://fonts.googleapis.com/css?family=Slabo 13px' rel='stylesheet'>
+
 
 </head>
 
 <body>
+
+    <a tabindex="0" href="#mainheader" class="hopptilmain" id="hopptilmain">Hopp til hovedinnhold</a>
+
+    <a tabindex="0" href="#fag" class="hopptilmain mobileskip" id="hopptilmain2">Hopp til fag</a>
+
+
+
     <nav class="sidebar">
         <ul>
             <li class="sideitem0" aria-hidden="false">
@@ -36,16 +45,24 @@
     <nav class="topbar" id="topbar">
         <ul class="toplist" id="toplist">
             
-
+            <li id="searchfield">
+                <form id="searchfield1">
+                    <label for="search">
+                        <input tabindex="0" class="search noJSSearch" id="search" placeholder="Søk.." aria-label="Søk"
+                            type="search" title="Søk">
+                    </label>
+                </form>
+            </li>
         
-            <li id="CalendarMenu" class="CalendarMenu calendarMenuChat">
+            <li id="CalendarMenu" class="CalendarMenu">
                 <a href="calendar.html">
-                    <img class="CalendarIcon" src="../images/calendar flat.png" width="50" height="40"  alt="calendar ikon">
+                  
+                    <img class="CalendarIkon" src="../images/calendar flat.png" width="50" height="40"  alt="calendar ikon">
                     Calendar
+                   
                 </a>
             </li>
             
-
             <li id="ChatMenu" class="noJSChat">
                 <a href="chat.html">
                     <img class="ChatIkon" src="../images/icons8-chat-60.png" width="50" height="40"  alt="chat ikon">
@@ -62,14 +79,14 @@
 
             <li id="MinSide">
                 <a href="#">
-                    <img class="minsideIkon" src="../images/profil.png" width="50" height="40"  alt="Min Side ikon">
+                    <img class="minsideIkon tooltip" data-tooltip="I’m the tooltip text." src="../images/profil.png" width="50" height="40"  alt="Min Side ikon">
                     Min Side
                 </a>
             </li>
         </ul>
 
     </nav>
-    <main id="maincontent">
+    <main id="maincontentchat">
                
         <h1 id="mainheaderChat">Meldinger</h1>
         <form class="form-container">

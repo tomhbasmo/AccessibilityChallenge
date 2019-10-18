@@ -57,7 +57,7 @@
             <li id="CalendarMenu" class="CalendarMenu">
                 <a href="calendar.html">
                   
-                    <img class="CalendarIcon" src="../images/calendar flat.png" width="50" height="40"  alt="calendar ikon">
+                    <img class="CalendarIkon" src="../images/calendar flat.png" width="50" height="40"  alt="calendar ikon">
                     Calendar
                    
                 </a>
@@ -79,23 +79,15 @@
 
             <li id="MinSide">
                 <a href="#">
-                    <img class="minsideIkon" src="../images/profil.png" width="50" height="40"  alt="Min Side ikon">
+                    <img class="minsideIkon tooltip" data-tooltip="I’m the tooltip text." src="../images/profil.png" width="50" height="40"  alt="Min Side ikon">
                     Min Side
                 </a>
             </li>
         </ul>
 
     </nav>
-    <div class="toolbar" role="toolbar" id="toolbar">
-    
-        <!--https://www.w3.org/WAI/tutorials/images/functional/#logo-image-within-link-text-->
-            <a width="50" height="80" class="linkPopup" href="popupsettings.html" target="popup" onclick="window.open('popupsettings.html','name','width=600,height=400')">
-                <img src="../images/showmore.svg" alt="åpner nytt vindu for visuelle instillinger" role="link" class="threeDotsImg" width="50" height="80">
-            </a>
-    </div>
-
    
-    <main id="mainheader maincontent" class="maincontent">
+    <main id="maincontent" class="maincontent">
        
             <section id="searchfield2">
                     <form id="searchfield2.1">
@@ -108,8 +100,11 @@
 
      <h1 id="mainheader">Forside</h1>
 
+    
+
         <article id="article1" tabindex="0">
             <h2>I dag</h2>
+            <p id="headingDash"></p>
             
          <p class="centeredtext text">
             
@@ -126,43 +121,43 @@
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet dicta, repudiandae unde nam vel quidem
                 </p>
         
-            </article>
-
-            </div>
-
-
+        </article>
+        <footer class="bottomNavContainer">
+                <ul class="bottomNav" id="bottomNav">
+                    <li id="tilbakeTilTopp" class="tilbakeTilTopp">
+                        <a href="#hjelp">Tilbake Til Toppen</a>
+                    </li>
+                
+                    <li id="bottomHjelp" class="bottomHjelp">
+                            <a href="#hjelp">Hjelp</a>
+                    </li>
+                
+                    <li class="sideKart">
+                            <a href="#sideKart">Sidekart</a>
+                    </li>
+                </ul>
+            </footer>
+   
 </main>
 
-<nav class="bottomNav" id="bottomNav">
 
-    <li id="tilbakeTilTopp" class="tilbakeTilTopp">
-        <a href="#hjelp">Tilbake Til Toppen</a>
-    </li>
 
-    <li id="bottomHjelp" class="bottomHjelp">
-            <a href="#hjelp">Hjelp</a>
-    </li>
-
-    <li class="sideKart">
-            <a href="#sideKart">Sidekart</a>
-    </li>
-
-</nav>
 
 
 <nav class="stickyfooter" id="stickyfooter" aria-hidden="true">
-        <ul class="footercontainer">
+    <ul class="footercontainer">
 
-            <li class="bottomitem1" >
-                <a id="fag" href="#programmering">Programmering</a>
-            </li>
+        <li class="bottomitem1" >
+            <a id="fag" href="#programmering">Programmering</a>
+        </li>
 
-            <li class="bottomitem2"><a href="#webutvikling">Webutvikling</a></li>
+        <li class="bottomitem2"><a href="#webutvikling">Webutvikling</a></li>
 
-            <li class="bottomitem3"><a href="#diskret">Diskret Matematikk</a></li>
+        <li class="bottomitem3"><a href="#diskret">Diskret Matematikk</a></li>
 
-        </ul>
-    </nav>
+    </ul>
+</nav>
+
 
 
 
