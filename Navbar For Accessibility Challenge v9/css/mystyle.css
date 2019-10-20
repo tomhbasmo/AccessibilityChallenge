@@ -7,6 +7,29 @@ body {
     box-sizing: border-box;
 }
 
+figcaption{
+    display: block;
+    font-size: 16px;
+    transform: translateY(-13px);
+    text-decoration-color: black;
+    text-decoration: underline;
+    
+}
+
+a>figcaption:focus{
+    outline: 3px solid grey;
+}
+
+
+.toplist>li>a>figure>figcaption{  /*denne targeter Navbarens tekst under logoen. */
+    transform: translateY(6px);
+   
+}
+figure{
+    margin: 0 !important;
+    padding: 0 !important;;
+}
+
 html body{
     margin: 0;
     padding: 0;
@@ -164,8 +187,8 @@ article{
     text-align: left;
     margin-top: 8%;
     height: 30vh;
-    margin-left: 22.5vw;
-    width: 60vw;
+    margin-left: 25.0vw !important;
+    width: 50vw;
     border-radius: 1vw;
     box-shadow: 0 1px 6px #474747;
     /* box-shadow: 0px 4px 3px rgba(0,0,0,0.4),
@@ -178,7 +201,7 @@ article{
     min-height: 250px !important;
     margin-top: 8%;
     height: 30vh;
-    margin-left: 22.5vw;
+    margin-left: 25.0vw !important;
     width: 60vw;
     border-radius: 1vw;
     box-shadow: 0 1px 6px #474747;
@@ -213,6 +236,11 @@ article{
     width: 100%;
     height: 100%;
     margin-top: 15px;
+  
+}
+
+#toplist{
+ display: flex !important;    
 }
 
 .search{
@@ -247,18 +275,21 @@ input[type=search]{
     display: inline-block;     /*inline block for å kunne være inline men ha block elements - altså bildet er rett over teksten*/
     text-align: center;
     margin-top: 10px;
+    flex: 1;
    
         }
-    
+
         .CalendarIkon{
-            width: 37px;
+            width: 40px;
             height: auto;
             padding: 0;
             display: block;    /*bildet er barn/ inni #epost må være block så margin 0 */
             margin: 0 auto;  
+            margin-left: 21%;
         }
 
 #ChatMenu{
+    flex: 1;
     margin-left: 5.9vw;
     width: 3vw;
     height: 3vh;
@@ -275,12 +306,12 @@ input[type=search]{
             padding: 0;
             display: block;    /*bildet er barn/ inni #epost må være block så margin 0 */
             margin: 0 auto;  
-            transform: translateX(6px);
+            transform: translateX(0px);
         }
 
 
 #Epost{
-  
+    flex: 1;
     margin-left:5vw;
     width: 6vw;
     height: 6vh;
@@ -300,9 +331,9 @@ input[type=search]{
 
 
 #MinSide{
+    flex: 2;
     white-space: nowrap;
     margin-left: 3vw;
-  
     width: 6wv;
     height: 6wv;
     display: inline-block;     /*inline block for å kunne være inline men ha block elements*/
@@ -351,6 +382,7 @@ clear: both;
 p{
     text-align: left;
     line-height: 1.6;
+    font-size: 1.07em;
 }
 .threeDotsImg{
     text-align: right;
@@ -438,10 +470,10 @@ i {
 }
 #mainheader{
     text-align: center;
-    margin-left: 3vw !important;
+    margin-left: 20vw;
     
     white-space: nowrap;
-   
+    
     margin-top: 4vh;
 }
 
@@ -452,7 +484,9 @@ font-size: 34px !important;
 h2{
     
 }
-
+#sideitem0>a>figure>figcaption{
+    font-size: 20px;
+}
 
 
 /* Add styles to the form container */
@@ -559,12 +593,12 @@ li.sideKart{
      display: block;
 }
 
-.sideKart{
 
-}
-.sideKart>a{
+* {
+    box-sizing: border-box !important;
+  }
 
-}
+
 
 #searchfield2{
     visibility: hidden !important;
@@ -598,23 +632,31 @@ margin-left: 42vw !important;
     position: absolute; top:0; left: 0; width: 80%; height: 90%;
      
     }
-    .CalendarIkon{
-        transform: translateX(0.5vw) !important;
-       }
-       @media only screen and (max-width: 1000px){
-       .CalendarIkon{
-        transform: translateX(1.5vw) !important;
-       }
-    }
-    @media only screen and (max-width: 950px){
-        .CalendarIkon{
-         transform: translateX(2.0vw) !important;
-        }
-     }
+    #CalendarIkon{
+        transform: translateX(0.2vw);
 
-@media only screen and (max-width: 860px){
+       }
+
+
+@media only screen and (max-width: 860px){ 
+
+
+    #CalendarMenu{
+        margin-top: 18px;  /*flytter litt pga width på calendar ikon er litt større for at de skal se like ut...*/
+        margin-left: 5vw !important;
+        
+    }
+
+    .CalendarIkonFigure{
+        margin-left: 5vw !important;
+    }
+
+    #mainheader{
+        text-align: center;
+        margin-right: 5vw;
+    }
     .topbar>ul>li>a{
-        color: transparent;
+       /* color: transparent; */
     }
     main{
         height: 130vh !important;
@@ -622,28 +664,34 @@ margin-left: 42vw !important;
     .topbar>li>a{
         line-height: 0; 
         font-size: 0;
-        color: transparent; 
+       /* color: transparent;  */
      }
     #CalendarMenu{
-        margin-left: 1vw !important;
+    
     }
     .CalendarIkon{
-width: 50px !important;
+    width: 48px !important;
     }
     .ChatIkon{
         width: 55px !important;
+        transform: translateX(-12px);
     }
     .ChatIkon{
-        transform: translateX(-6px);
+       
+        margin-left: 29%;
     }
     .epostIkon{
         width: 50px!important;
+        margin-top: 6%;
+      
+
     }
     .minsideIkon{
-        width: 50px!important;
+        width: 54px!important;
+       
     }
 #ChatMenu{
-    margin-left: 12vw;
+    margin-left: 14vw;
     margin-right: 0 0 0 0 !important;
 }
 #Epost{
@@ -651,7 +699,7 @@ width: 50px !important;
     margin-right: 0 0 0 0 !important;
 }
 #MinSide{
-    margin-left: 14vw !important;
+    margin-left: 11vw !important;
     margin-right: 0 0 0 0 !important;
 }
    
@@ -682,7 +730,7 @@ width: 50px !important;
     }
 
     input[type=search]{
-        margin-left: -17.5vw !important;
+        margin-left: -20.0vw !important;
             width: 60vw;
             }
 
@@ -699,7 +747,7 @@ width: 50px !important;
         margin-top: 8%;
         height: 40vh !important;
         min-height: 290px;
-        margin-left: 22.5vw !important;
+        margin-left: 20vw !important;
         width: 60vw;
         border-radius: 1vw;
         box-shadow: 0px 4px 3px rgba(0,0,0,0.1  ),
@@ -712,7 +760,7 @@ width: 50px !important;
     #article2{
         margin-top: 8%;
         height: 30vh;
-        margin-left: 22.5vw !important;
+        margin-left: 20vw !important;
         width: 60vw;
         min-height: 310px !important;
  
@@ -913,9 +961,6 @@ li{
         height: 12vh;
         min-height: 100px;
     }
-        .CalendarIcon{
-            transform: translateX(0.5vw);
-           }
       
         
      
@@ -980,72 +1025,166 @@ body{
     transform: translateX(2vw);
    }
 }
+
+@media only screen and (max-width: 590px){
+    
+    .sidebar{
+        width: 100vw;
+        text-align: center;
+    }
+    .topbar{
+       width: 100vw;
+    }
+
+}
+
 @media only screen and (max-width: 590px){
 /*That would scale font-size from a minimum of 16px (at a 320px viewport) to a maximum of 22px (at a 1000px viewport).*/
     .topbar>ul>li>a{    
-        font-size: calc(16px + 6 * ((100vw - 500px) / 680));
+       /* font-size: calc(16px + 6 * ((100vw - 500px) / 680)); */
     }
   
     #CalendarMenu{
-        margin-left: 1vw;
+        margin-left: 2vw !important;
     }
     #ChatMenu{
-        margin-left: 12vw;
+        margin-left: 19vw;
+    }
+    .ChatIkon{
+        transform: translateX(-15px);
     }
     #Epost{
-        margin-left: 12vw;
-        margin-right: 0 0 0 0 !important;
+        margin-left: 18vw;
+        margin-right: 0 !important;
+        margin-top: 11px;
     }
     #MinSide{
-        margin-left: 10vw !important;
+        margin-left: 14.9vw !important;
         margin-right: 0 0 0 0 !important;
     }
+    
 }
-@media only screen and (max-width: 399px){
+
+@media only screen and (max-width: 440px){
+    
+}
+
+
+@media only screen and (max-width: 440px){
   
+  /*
+    .toplist>li>a>img{
+      margin-top: 20%;
+  }
+
     .skolelogo{
-        width: 80px;
         height: auto;
         margin-top: 2vh;
-    
     }
     .topbar{
-        width: calc(100vw - 80px)
+        width: 100vw;
     }
     .sidebar{
-        width: 80px;
+        width: 100vw;
     }
 .toplist{
     margin: 0 0 0 0 !important;
 }
     #CalendarMenu{
-        margin-left:0.5vw;
+        margin-left:0.5vw; 
+       
     }
+
     #ChatMenu{
-        margin-left: 11vw !important;
+        margin-left: 12vw !important;
+        
     }
     #Epost{
-        margin-left: 11vw !important;
-        margin-right: 0 0 0 0 !important;
+        margin-left: 14vw !important;
+        float: none !important;
+        clear: both;
+        
     }
     #MinSide{
-        margin-left: 11vw !important;
-        margin-right: 0 0 0 0 !important;
+        margin-left: 15vw !important;
+        transform: translateY(-9%) !important;
+
     }
+
+
+       
+        }
+*/
+/*
+        @media only screen and (max-width: 352px){
+            #MinSide{
+                position: absolute;
+                word-wrap: none;
+            }
+            @supports (display: flex) {
+                #MinSide { 
+                    position: static !important;
+                }
+                
+
+        }
+    }
+
+ @media only screen and (max-width: 351px){
+
+
+      @supports (display: flex) {
+        #MinSide { 
+            margin-left: 54vw !important;
+        }
+
+        #ChatMenu{
+        margin-left: 8vw !important;
+    }
+    #Epost{
+        margin-left: 7vw !important;
+    }
+
+      }
 
     body{
         width: 100wv;
     }
-       
-        #Epost{
-          
-             margin-left: 0;
-        
-         }
-        }
+    
+     .CalendarIkon{
+    
+        margin-left: -1vw !important;
+        margin-right: 0;
+
+     }
+     .epostIkon{
+    
+         margin-left: -7vw !important;
+         margin-right: 0 !important;
+     }
+     .minsideIkon{
+      
+        margin-left: -5vw !important;
+        margin-right: 0 0 0 0 !important;
+    }
+    #MinSide{
+        margin-left: 14vw !important;
+    }
+    .ChatIkon{
+     
+        margin-left: -4vw !important;
+        margin-right: 0;
+    }
+ }
 
         @media only screen and (max-width: 400px){
 
+            .ChatIkon{
+                margin-left: 0vw;
+            }
+            .epostIkon{
+                margin-left: -2vw;
+            }
         #article1{
             height: 60vh !important;
             max-height: 1000px;
@@ -1055,7 +1194,30 @@ body{
             max-height: 1000px;
         }
     }
-        @media only screen and (max-width: 340px){
+        @media only screen and (max-width: 349px){
+        /*    .epostIkon{
+                margin-left: -6vw !important;
+            }
+            .minsideIkon{
+                margin-left: -6vw !important;
+                transform: none;
+                
+            }
+            img.minsideIkon{
+                word-break: break-all;
+                margin-right: 0vw !important;
+                margin-right: 0vw !important;
+            }
+            #MinSide{
+                word-break: break-all;
+            }
+            a *:not(img){
+                margin-right: 10vw !important;
+                transform: translateX(10vw);
+            }
+            */
+
+            
             body{
                 width: 100wv;
             }
@@ -1131,7 +1293,7 @@ body{
                     text-align: center;
                     margin-top: 5%;
                     height: 30vh;
-                    margin-left: 22.5vw;
+                    margin-left: 20vw;
                     width: 60vw;
                     border-radius: 1vw;
                     margin-bottom: 10vh;
@@ -1152,7 +1314,7 @@ body{
                 #article2{
                     margin-top: 4%;
                     height: 30vh;
-                    margin-left: 22.5vw;
+                    margin-left: 20vw;
                     width: 60vw;
                     border-radius: 1vw; 
                 }

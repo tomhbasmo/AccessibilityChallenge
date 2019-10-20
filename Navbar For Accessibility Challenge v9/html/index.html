@@ -23,9 +23,14 @@
 
     <nav class="sidebar">
         <ul>
-            <li class="sideitem0" aria-hidden="false">
-                <a href="index.html"><img class="skolelogo" src="../images/skolelogo.png"
-                    width="100" height="90" alt="skole logo">
+            <li role="banner" class="sideitem0" aria-hidden="false">
+                <a href="index.html">
+                    <figure>
+                        <img class="skolelogo" src="../images/skolelogo.png" width="100" height="90" alt="skole logo">
+                        <figcaption id="bannertext" tab-index="0">
+                            Hjem
+                        </figcaption>
+                    </figure>
                 </a>
             </li>
 
@@ -41,10 +46,10 @@
 
         </ul>
     </nav>
-    
+
     <nav class="topbar" id="topbar">
         <ul class="toplist" id="toplist">
-            
+
             <li id="searchfield">
                 <form id="searchfield1">
                     <label for="search">
@@ -53,110 +58,125 @@
                     </label>
                 </form>
             </li>
-        
-            <li id="CalendarMenu" class="CalendarMenu">
-                <a href="calendar.html">
-                  
-                    <img class="CalendarIkon" src="../images/calendar flat.png" width="50" height="40"  alt="calendar ikon">
-                    Calendar
-                   
+
+            <li tab-index="-1" id="CalendarMenu" class="CalendarMenu">
+                <a tab-index="-1" href="calendar.html">
+                    <figure id="CalendarIkonFigure">
+                        <img class="CalendarIkon" id="CalendarIkon" src="../images/calendar flat.png" width="50"
+                            height="40" alt="calendar ikon">
+                        <figcaption tab-index="0">
+                            Calendar
+                        </figcaption>
+                    </figure>
                 </a>
             </li>
-            
+
             <li id="ChatMenu" class="noJSChat">
                 <a href="chat.html">
-                    <img class="ChatIkon" src="../images/icons8-chat-60.png" width="50" height="40"  alt="chat ikon">
-                    Chat
+                    <figure>
+                        <img class="ChatIkon" src="../images/icons8-chat-60.png" width="50" height="40" alt="chat ikon">
+                        <figcaption tab-index="0">
+                            Chat
+                        </figcaption>
+                    </figure>
                 </a>
             </li>
 
             <li id="Epost" class="noJSEpost">
                 <a href="#">
-                    <img class="epostIkon" src="../images/epost.svg" width="50" height="40"  alt="Epost ikon">
-                    Epost
+                    <figure>
+                        <img class="epostIkon" src="../images/epost.svg" width="50" height="40" alt="Epost ikon">
+                        <figcaption tab-index="0">
+                            Epost
+                        </figcaption>
+                    </figure>
                 </a>
             </li>
 
             <li id="MinSide">
                 <a href="#">
-                    <img class="minsideIkon tooltip" data-tooltip="I’m the tooltip text." src="../images/profil.png" width="50" height="40"  alt="Min Side ikon">
-                    Min Side
+                    <figure>
+                        <img class="minsideIkon" src="../images/profil.png" width="50" height="40" alt="Min Side ikon">
+                        <figcaption tab-index="0">
+                            Min Side
+                        </figcaption>
+                    </figure>
                 </a>
             </li>
         </ul>
 
     </nav>
-   
+
     <main id="maincontent" class="maincontent">
-       
-            <section id="searchfield2">
-                    <form id="searchfield2.1">
-                        <label for="search">
-                            <input tabindex="0" class="search noJSSearch" id="search" placeholder="Søk.." aria-label="Søk"
-                                type="search" title="Søk">
-                        </label>
-                    </form>
-                </section>
 
-     <h1 id="mainheader">Forside</h1>
+        <section id="searchfield2">
+            <form id="searchfield2.1">
+                <label for="search">
+                    <input tabindex="0" class="search noJSSearch" id="search" placeholder="Søk.." aria-label="Søk"
+                        type="search" title="Søk">
+                </label>
+            </form>
+        </section>
 
-    
+        <div aria-hidden="true" id="mainheader"></div>
 
-        <article id="article1" tabindex="0">
+
+
+        <article id="article1">
             <h2>I dag</h2>
             <p id="headingDash"></p>
-            
-         <p class="centeredtext text">
-            
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet dicta, repudiandae unde nam vel quidem
-         </p>
-       
+
+            <p class="centeredtext text">
+
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet dicta, repudiandae unde nam vel quidem
+            </p>
+
 
         </article>
 
 
-        <article id="article2" tabindex="0" >
-                <h3>Neste modul</h3>
-                <p class="centeredtext text">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet dicta, repudiandae unde nam vel quidem
-                </p>
-        
+        <article id="article2">
+            <h3>Neste modul</h3>
+            <p class="centeredtext text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet dicta, repudiandae unde nam vel quidem
+            </p>
         </article>
+
         <footer class="bottomNavContainer">
-                <ul class="bottomNav" id="bottomNav">
-                    <li id="tilbakeTilTopp" class="tilbakeTilTopp">
-                        <a href="#hjelp">Tilbake Til Toppen</a>
-                    </li>
-                
-                    <li id="bottomHjelp" class="bottomHjelp">
-                            <a href="#hjelp">Hjelp</a>
-                    </li>
-                
-                    <li class="sideKart">
-                            <a href="#sideKart">Sidekart</a>
-                    </li>
-                </ul>
-            </footer>
-   
-</main>
+            <ul class="bottomNav" id="bottomNav">
+                <li id="tilbakeTilTopp" class="tilbakeTilTopp">
+                    <a href="#topbar">Tilbake Til Toppen</a>
+                </li>
+
+                <li id="bottomHjelp" class="bottomHjelp">
+                    <a href="#hjelp">Hjelp</a>
+                </li>
+
+                <li class="sideKart">
+                    <a href="#sideKart">Sidekart</a>
+                </li>
+            </ul>
+        </footer>
+
+    </main>
 
 
 
 
 
-<nav class="stickyfooter" id="stickyfooter" aria-hidden="true">
-    <ul class="footercontainer">
+    <nav class="stickyfooter" id="stickyfooter" aria-hidden="true">
+        <ul class="footercontainer">
 
-        <li class="bottomitem1" >
-            <a id="fag" href="#programmering">Programmering</a>
-        </li>
+            <li class="bottomitem1">
+                <a id="fag" href="#programmering">Programmering</a>
+            </li>
 
-        <li class="bottomitem2"><a href="#webutvikling">Webutvikling</a></li>
+            <li class="bottomitem2"><a href="#webutvikling">Webutvikling</a></li>
 
-        <li class="bottomitem3"><a href="#diskret">Diskret Matematikk</a></li>
+            <li class="bottomitem3"><a href="#diskret">Diskret Matematikk</a></li>
 
-    </ul>
-</nav>
+        </ul>
+    </nav>
 
 
 
