@@ -22,16 +22,19 @@
 
 
     <nav class="sidebar">
-        <ul>
-            <li role="banner" class="sideitem0" aria-hidden="false">
-                <a href="index.html">
-                    <figure>
-                        <img class="skolelogo" src="../images/skolelogo.png" width="100" height="90" alt="skole logo">
-                        <figcaption id="bannertext" tab-index="0">
+        <ul tabindex="-1">
+            <li class="sideitem0" tabindex="-1">
+
+                <figure>
+                    <a href="index.html" tabindex="0">
+                        <img tabindex="-1" class="skolelogo" src="../images/skolelogo.png" width="100" height="90"
+                            alt="banner">
+                        <figcaption tabindex="-1" id="bannertext">
                             Hjem
                         </figcaption>
-                    </figure>
-                </a>
+                    </a>
+                </figure>
+
             </li>
 
             <li class="sideitem1" id="sideitem1" aria-hidden="false">
@@ -60,22 +63,22 @@
             </li>
 
             <li tab-index="-1" id="CalendarMenu" class="CalendarMenu">
-                <a tab-index="-1" href="calendar.html">
-                    <figure id="CalendarIkonFigure">
-                        <img class="CalendarIkon" id="CalendarIkon" src="../images/calendar flat.png" width="50"
-                            height="40" alt="calendar ikon">
-                        <figcaption tab-index="0">
-                            Calendar
+                <a id="calendaranchor" tab-index="0" href="calendar.html">
+                    <figure tabindex="-1" id="CalendarIkonFigure">
+                        <img tabindex="-1" class="CalendarIkon" id="CalendarIkon" src="../images/calendar flat.png"
+                            width="50" height="40" alt="calendar ikon">
+                        <figcaption tabindex="-1">
+                            Kalender
                         </figcaption>
                     </figure>
                 </a>
             </li>
 
             <li id="ChatMenu" class="noJSChat">
-                <a href="chat.html">
+                <a tab-index="0" href="chat.html">
                     <figure>
                         <img class="ChatIkon" src="../images/icons8-chat-60.png" width="50" height="40" alt="chat ikon">
-                        <figcaption tab-index="0">
+                        <figcaption>
                             Chat
                         </figcaption>
                     </figure>
@@ -83,7 +86,7 @@
             </li>
 
             <li id="Epost" class="noJSEpost">
-                <a href="#">
+                <a href="#" tab-index="0">
                     <figure>
                         <img class="epostIkon" src="../images/epost.svg" width="50" height="40" alt="Epost ikon">
                         <figcaption tab-index="0">
@@ -94,10 +97,10 @@
             </li>
 
             <li id="MinSide">
-                <a href="#">
+                <a href="#" tab-index="0">
                     <figure>
                         <img class="minsideIkon" src="../images/profil.png" width="50" height="40" alt="Min Side ikon">
-                        <figcaption tab-index="0">
+                        <figcaption>
                             Min Side
                         </figcaption>
                     </figure>

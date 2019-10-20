@@ -7,17 +7,42 @@ body {
     box-sizing: border-box;
 }
 
+*:focus-visible{
+    outline: 1px dotted #212121;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+ul>li:focus{
+    outline: 1px dotted black;
+    outline: 1px auto -webkit-focus-ring-color;
+    z-index: 99999;
+}
+
+.topbar>ul>li>a { 
+    display:inline-block !important; 
+}
+
+
+
+
+  li>a{
+      position: relative;
+  }
+
+
 figcaption{
     display: block;
     font-size: 16px;
     transform: translateY(-13px);
     text-decoration-color: black;
     text-decoration: underline;
+    z-index: 99999;
     
 }
 
-a>figcaption:focus{
-    outline: 3px solid grey;
+a:focus{
+    outline: 2px solid grey;
+    z-index: 99999;
 }
 
 
@@ -240,7 +265,7 @@ article{
 }
 
 #toplist{
- display: flex !important;    
+ display: flex !important;   
 }
 
 .search{
@@ -632,14 +657,14 @@ margin-left: 42vw !important;
     position: absolute; top:0; left: 0; width: 80%; height: 90%;
      
     }
-    #CalendarIkon{
-        transform: translateX(0.2vw);
-
-       }
+ 
 
 
 @media only screen and (max-width: 860px){ 
+    #CalendarIkon{
+        transform: translateX(-0.9vw);
 
+       }
 
     #CalendarMenu{
         margin-top: 18px;  /*flytter litt pga width på calendar ikon er litt større for at de skal se like ut...*/
@@ -1043,7 +1068,9 @@ body{
     .topbar>ul>li>a{    
        /* font-size: calc(16px + 6 * ((100vw - 500px) / 680)); */
     }
-  
+  .sideitem0{
+    margin-top: -10px;
+  }
     #CalendarMenu{
         margin-left: 2vw !important;
     }
@@ -1233,7 +1260,7 @@ body{
                 /*Nina changes*/
 
                 .sideitem0{
-                
+                    
                     text-align: center;
                     background-color: white;
                     box-shadow: 10px 6px 5px -5px #474747;
