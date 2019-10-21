@@ -165,8 +165,8 @@ a{
 }
 
 .sideitem1{
-    height: 4vh;
-    min-height: 100px !important;
+    height: 2vh;
+    min-height: 70px !important;
     border-bottom: 1px solid black;
     border-right: 1px solid black;
     border-top: 1px solid black;
@@ -176,8 +176,8 @@ a{
 }
 
 .sideitem2{
-    height: 4vh;
-    min-height: 100px !important;
+    height: 2vh;
+    min-height: 70px !important;
     border-bottom: 1px solid black;
     border-right: 1px solid black;
     text-align: left;
@@ -185,8 +185,8 @@ a{
 }
 
 .sideitem3{
-    height: 4vh;
-    min-height: 100px !important;
+    height: 2vh;
+    min-height: 70px !important;
     border-bottom: 1px solid black;
     border-right: 1px solid black;
     text-align: center;
@@ -212,33 +212,19 @@ article{
     text-align: left;
     margin-top: 8%;
     height: 30vh;
-    margin-left: 25.0vw !important;
+    margin-left: 20vw !important;
     width: 50vw;
-    border-radius: 1vw;
-    box-shadow: 0 1px 6px #474747;
-    /* box-shadow: 0px 4px 3px rgba(0,0,0,0.4),
-         0px 8px 13px rgba(0,0,0,0.01),
-         0px 18px 23px rgba(0,0,0,0.1); */
-   
+    border-radius: 10px;
 }
 
 #article2{
     min-height: 250px !important;
     margin-top: 8%;
     height: 30vh;
-    margin-left: 25.0vw !important;
+    margin-left: 20vw !important;
     width: 60vw;
-    border-radius: 1vw;
-    box-shadow: 0 1px 6px #474747;
+    border-radius: 10px;
     margin-bottom: 10vh !important;
-
-    /*
-    box-shadow: 0px 4px 3px rgba(0,0,0,0.4),
-         0px 8px 13px rgba(0,0,0,0.01),
-         0px 18px 23px rgba(0,0,0,0.1);
-         */
-
-   
 }
 
 .topbar{
@@ -574,12 +560,11 @@ h2{
 main{
 }
 .bottomNavContainer{
-    border-radius: 1vw;
     margin: 0 0 0 0 !important;
     overflow: auto;
-width: 100%;
-text-align: center;
-list-style: none;
+    width: 100%;
+    text-align: center;
+    list-style: none;
 /*transform: translateX(-10vw); */
 }
 .bottomNav{
@@ -587,10 +572,13 @@ list-style: none;
     height: calc(10vh+20px);
     list-style: none;
     display: inline-block;
-    background-color: #acacac;
+    background-color: #262626;
     min-height: 190px;
     max-height: 290px;
     position: static !important;
+}
+#bottomNav a {
+    color: white;
 }
 .bottomNav>li>a{
     text-decoration: blue;
@@ -775,9 +763,6 @@ margin-left: 42vw !important;
         margin-left: 20vw !important;
         width: 60vw;
         border-radius: 1vw;
-        box-shadow: 0px 4px 3px rgba(0,0,0,0.1  ),
-        0px 8px 13px rgba(0,0,0,0.01),
-        0px 18px 23px rgba(0,0,0,0.01);
         text-align: center;
         min-height: 310px !important;
     }
@@ -1308,21 +1293,18 @@ body{
                 article{
                     display: block;
                     border: solid #4ee6e6 2px;
-                    border-top-right-radius: 10px;
-                    border-bottom-left-radius: 10px;
-                    border-bottom-right-radius: 10px;
+                    border-radius: 10px;
                     background-color: #cafafe;
                     text-align: center;
                 }
                 
                 
                 #article1{
-                    text-align: center;
+                    text-align: left;
                     margin-top: 5%;
                     height: 30vh;
                     margin-left: 20vw;
                     width: 60vw;
-                    border-radius: 1vw;
                     margin-bottom: 10vh;
                 }
                 #article1 h2{
@@ -1330,8 +1312,9 @@ body{
                     font-family: "Slabo 13px";
                     font-size: 23px;
                     font-weight: 500;
-                    
                     padding-bottom: 0.5vh;
+                    padding-top: 0.5vh;
+                    margin-top: 0;
                 }
                 #headingDash{
                     border-bottom: dashed #e64e4e  3px;
@@ -1343,17 +1326,20 @@ body{
                     height: 30vh;
                     margin-left: 20vw;
                     width: 60vw;
-                    border-radius: 1vw; 
                 }
                 #article2 h3{
                     text-align: center;
                     font-family: "Slabo 13px";
                     font-size: 23px;
                     font-weight: 500;
-                    border-bottom: dashed #e64e4e  3px;
+                    border-bottom: dashed #e64e4e 3px;
                     padding-bottom: 0.5vh;
+                    padding-top: 0.5vh;
+                    margin-top: 0;
                 }
-                
+                #phjem {
+                    padding: 2%;
+                }
                 .topbar{
                     background-color: #e64e4e; /*/*må være det samme som .sideitem0 */
                     padding: 0;
@@ -1366,7 +1352,80 @@ body{
                     display: inline-block;
                     box-shadow: 0 6px 5px -5px #474747;
                 }
+                #article_profil {
+                    width: 27vw;
+                    height: 20vw;
+                    float: left;
+                    margin-left: 5vw;
+                    margin-top: 2.3vw;
+                }
+                #article_profil h2 {
+                    text-align: center;
+                    margin: 1%;
+                    border-bottom: dashed #e64e4e 3px;
+                    font-family: "Slabo 13px";
+                    font-weight: 500;
+                }
+                #navnbox, #emailbox {
+                    text-align: left;
+                    padding-top: 2%;
+                }
+                #article_farger {
+                    width: 23vw;
+                    height: 17vw;
+                    float: left;
+                    margin-left: 4vw;
+                    margin-top: 2.3vw;
+                }
+                #article_farger h2 {
+                    text-align: center;
+                    margin: 1%;
+                    border-bottom: dashed #e64e4e 3px;
+                    font-family: "Slabo 13px";
+                    font-weight: 500;
+                }
+                #selections{
+                    text-align: left;
+                    padding-left: 3%;
+                }
+#selections select {
+    padding: 1%;
+    margin: 0.6%;
+}
+                #lagre {
+                    margin-top: 2%;
+                }
+                #article_farger p {
+                    margin: 0;
+                    padding-left: 4%;
+                    padding-top: 2%;
+                    padding-bottom: 2%;
+                }
 
                 *{
                     line-height: 1.6 !important;
                 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
