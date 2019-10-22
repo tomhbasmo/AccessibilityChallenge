@@ -1,77 +1,114 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html lang="no" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html lang="no" class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html lang="no" class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
 <html lang="no" class="no-js">
-<!--<![endif]-->
 
 <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>LMS</title>
-        <meta name="description" content="LMS skole digital læringsplattform">
-        <meta name="viewport" content="width=device-width, initial-scale=1" user-scalable=yes>
-        <link rel="stylesheet" href="../css/mystyle.css">
-    
-        <noscript>
-                <link rel="stylesheet" href="../css/mystyle.css">
-        </noscript>
-    </head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Hjem</title>
+    <meta name="description" content="LMS skole digital læringsplattform">
+    <meta name="viewport" content="width=device-width, initial-scale=1" user-scalable=yes>
+    <link rel="stylesheet" href="../css/mystyle.css">
+    <link href='https://fonts.googleapis.com/css?family=Slabo 13px' rel='stylesheet'>
+
+</head>
 
 <body>
-    <a href="#maincontent" class="hopptilmain">Skip to main content</a>
+
+    <a tabindex="0" href="#mainheader" class="hopptilmain" id="hopptilmain">Hopp til hovedinnhold</a>
+
+    <a tabindex="0" href="#fag" class="hopptilmain mobileskip" id="hopptilmain2">Hopp til fag</a>
+
+
 
     <nav class="sidebar">
-        <ul>
-            <li class="sideitem0" aria-hidden="false">
-                <a tabindex="-1" href="#home"><img class="skolelogo" src="../images/skolelogo.png"
-                        alt="skole logo">
-                </a>
+        <ul tabindex="-1">
+            <li class="sideitem0" tabindex="-1">
+
+                <figure>
+                    <a href="index.html" tabindex="0">
+                        <img tabindex="-1" class="skolelogo" src="../images/skolelogo.png" width="100" height="90"
+                            alt="banner">
+                        <figcaption tabindex="-1" id="bannertext">
+                            Hjem
+                        </figcaption>
+                    </a>
+                </figure>
+
             </li>
 
-
-            <li class="sideitem1 active" id="sideitem1"  aria-hidden="">
-                <a href="#programmering">Programmering</a>
-
+            <li class="sideitem1" id="sideitem1" aria-hidden="false">
+                <a href="programmering.html">Programmering</a>
             </li>
 
-            <li class="sideitem2" id="sideitem2" aria-hidden="">
+            <li class="sideitem2" id="sideitem2" aria-hidden="false">
                 <a href="#webutvikling">Webutvikling</a>
             </li>
 
-            <li class="sideitem3" id="sideitem3" aria-hidden=""><a href="#diskret">Diskret Matematikk</a></li>
+            <li class="sideitem3" id="sideitem3" aria-hidden="false"><a href="#diskret">Diskret Matematikk</a></li>
 
         </ul>
     </nav>
-    <nav class="topbar">
-        <ul class="toplist">
-            <li>
-                <form>
+
+    <nav class="topbar" id="topbar">
+        <ul class="toplist" id="toplist">
+
+            <li id="searchfield">
+                <form id="searchfield1">
                     <label for="search">
-                        <input tabindex="0" class="search" id="search" placeholder="Søk.." aria-label="Søk"
+                        <input tabindex="0" class="search noJSSearch" id="search" placeholder="Søk.." aria-label="Søk"
                             type="search" title="Søk">
                     </label>
                 </form>
             </li>
 
-            <li id="Epost">
-                <a href="#">
-                    <img class="epostIkon" src="../images/epost.svg" alt="Epost ikon">
-                    Epost
+            <li tab-index="-1" id="CalendarMenu" class="CalendarMenu">
+                <a id="calendaranchor" tab-index="0" href="calendar.html">
+                    <figure tabindex="-1" id="CalendarIkonFigure">
+                        <img tabindex="-1" class="CalendarIkon" id="CalendarIkon" src="../images/calendar flat.png"
+                            width="50" height="40" alt="calendar ikon">
+                        <figcaption tabindex="-1">
+                            Kalender
+                        </figcaption>
+                    </figure>
+                </a>
+            </li>
+
+            <li id="ChatMenu" class="noJSChat">
+                <a tab-index="0" href="chat.html">
+                    <figure>
+                        <img class="ChatIkon" src="../images/icons8-chat-60.png" width="50" height="40" alt="chat ikon">
+                        <figcaption>
+                            Chat
+                        </figcaption>
+                    </figure>
+                </a>
+            </li>
+
+            <li id="Epost" class="noJSEpost">
+                <a href="#" tab-index="0">
+                    <figure>
+                        <img class="epostIkon" src="../images/epost.svg" width="50" height="40" alt="Epost ikon">
+                        <figcaption tab-index="0">
+                            Epost
+                        </figcaption>
+                    </figure>
                 </a>
             </li>
 
             <li id="MinSide">
-                <a href="#">
-                    <img class="minsideIkon" src="../images/profil.png" alt="Min Side ikon">
-                    Min Side
+                <a href="minside.html" tab-index="0">
+                    <figure>
+                        <img class="minsideIkon" src="../images/profil.png" width="50" height="40" alt="Min Side ikon">
+                        <figcaption>
+                            Min Side
+                        </figcaption>
+                    </figure>
                 </a>
             </li>
-
         </ul>
 
     </nav>
+
 
     <main tabindex="0" id="maincontent" class="maincontent">
         <h1>PROGRAMMERING</h1>

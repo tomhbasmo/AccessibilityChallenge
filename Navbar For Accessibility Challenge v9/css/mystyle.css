@@ -1425,8 +1425,11 @@ body{
                     line-height: 1.6 !important;
                     scroll-behavior: smooth;
                 }
-                .maincontentminside{
-                    height: 80vh;
+                #maincontentminside{
+                    height: 50vh !important;
+                       }
+                       .articleMinside{
+                           margin-bottom: 40vw;
                        }
 
 
