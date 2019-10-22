@@ -28,7 +28,10 @@ ul>li:focus{
   li>a{
       position: relative;
   }
-
+.sitemap>article>a{
+    text-decoration-color: black;
+    text-decoration: underline;
+}
 
 figcaption{
     display: block;
@@ -559,6 +562,7 @@ h2{
 }
 main{
 }
+
 .bottomNavContainer{
     margin: 0 0 0 0 !important;
     overflow: auto;
@@ -649,6 +653,13 @@ margin-left: 42vw !important;
 
 
 @media only screen and (max-width: 860px){ 
+    .articleMinside{
+        margin-left: calc(50vw - 300px)!important;
+       
+        min-width: 270px !important;
+    
+        /*margin-left: 12% !important; */
+    }
     #CalendarIkon{
         transform: translateX(-0.9vw);
 
@@ -788,12 +799,7 @@ margin-left: 42vw !important;
         margin-left: 0;
         margin-right: 0 !important;
     }
-    .maincontent{
-        text-align: center;
-        margin-left: 0;
-        margin-right: 0;
-        text-align: center;
-    }
+
 
     main{
         margin: 0 0 0 0 !important;
@@ -1037,7 +1043,7 @@ body{
 }
 
 @media only screen and (max-width: 590px){
-    
+ 
     .sidebar{
         width: 100vw;
         text-align: center;
@@ -1388,6 +1394,19 @@ body{
                     text-align: left;
                     padding-left: 3%;
                 }
+
+                .active {
+                    Color: white; 
+                    height: 100%;
+                    
+                }
+
+                .articleMinside{
+                    min-height: 390px !important;
+                    min-width: 270px;
+                    margin-left: 4% !important; 
+                }
+
 #selections select {
     padding: 1%;
     margin: 0.6%;
@@ -1404,7 +1423,11 @@ body{
 
                 *{
                     line-height: 1.6 !important;
+                    scroll-behavior: smooth;
                 }
+                .maincontentminside{
+                    height: 80vh;
+                       }
 
 
 

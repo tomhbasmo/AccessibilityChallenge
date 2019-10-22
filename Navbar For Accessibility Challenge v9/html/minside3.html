@@ -4,11 +4,12 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Hjem</title>
+    <title>LMS</title>
     <meta name="description" content="LMS skole digital læringsplattform">
     <meta name="viewport" content="width=device-width, initial-scale=1" user-scalable=yes>
     <link rel="stylesheet" href="../css/mystyle.css">
     <link href='https://fonts.googleapis.com/css?family=Slabo 13px' rel='stylesheet'>
+
 
 </head>
 
@@ -124,28 +125,68 @@
 
 
 
-        <article id="article1">
-            <h2>I dag</h2>
-            <p id="headingDash"></p>
-            <p id="phjem">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet dicta, repudiandae unde nam vel quidem
-            </p>
-
-
+        <article id="article_profil">
+            <h2>Profil</h2>
+            <form id="navnbox">
+                Navn: <input aria-label="name" type="text" name="navn" value="Per Hansen" readonly><br>
+            </form>
+            <form id="emailbox">
+                Email: <input aria-label="Email" type="text" name="email" value="perhansen@gmail.com" readonly><br>
+            </form>
         </article>
 
 
-        <article id="article2">
-            <h3>Neste modul</h3>
-            <p id="phjem">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet dicta, repudiandae unde nam vel quidem
+        <article id="article_farger">
+            <h2>Endre farger</h2>
+            <p>
+                Velg en farge for hvert fag:
             </p>
+            <div id="selections">
+                <select>
+                  <option value="1">Webutvikling og inkluderende design</option>
+                  <option value="2">Programmering</option>
+                  <option value="3">Diskret matematikk</option>
+                </select>
+                <select>
+                    <option value="1">Blå</option>
+                    <option value="2">Rød</option>
+                    <option value="3">Grønn</option>
+                    <option value="4">Lilla</option>
+                    <option value="5">Gul</option>
+                </select>
+                <select>
+                  <option value="1">Webutvikling og inkluderende design</option>
+                  <option value="2">Programmering</option>
+                  <option value="3">Diskret matematikk</option>
+                </select>
+                <select>
+                    <option value="1">Blå</option>
+                    <option value="2">Rød</option>
+                    <option value="3">Grønn</option>
+                    <option value="4">Lilla</option>
+                    <option value="5">Gul</option>
+                </select>
+                <select>
+                  <option value="1">Webutvikling og inkluderende design</option>
+                  <option value="2">Programmering</option>
+                  <option value="3">Diskret matematikk</option>
+                </select>
+                <select>
+                    <option value="1">Blå</option>
+                    <option value="2">Rød</option>
+                    <option value="3">Grønn</option>
+                    <option value="4">Lilla</option>
+                    <option value="5">Gul</option>
+                </select>
+                <br \>
+                <button id="lagre" type="button">Lagre</button>
+            </div>
         </article>
 
-        <footer class="bottomNavMinside bottomNavContainer">
+        <footer class="bottomNavContainer">
             <ul class="bottomNav" id="bottomNav">
                 <li id="tilbakeTilTopp" class="tilbakeTilTopp">
-                    <a href="#topbar">Tilbake Til Topp</a>
+                    <a href="#topbar">Tilbake Til Toppen</a>
                 </li>
 
                 <li id="bottomHjelp" class="bottomHjelp">
@@ -153,7 +194,7 @@
                 </li>
 
                 <li class="sideKart">
-                    <a href="sitemap.html">Sidekart</a>
+                    <a href="#sideKart">Sidekart</a>
                 </li>
             </ul>
         </footer>

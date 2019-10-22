@@ -8,24 +8,33 @@
     <meta name="description" content="LMS skole digital læringsplattform">
     <meta name="viewport" content="width=device-width, initial-scale=1" user-scalable=yes>
     <link rel="stylesheet" href="../css/mystyle.css">
+    <link href='https://fonts.googleapis.com/css?family=Slabo 13px' rel='stylesheet'>
 
 
 </head>
 
 <body>
 
-    <a tabindex="0" href="#calendar" class="hopptilmain" id="hopptilmain">Hopp til hovedinnhold</a>
+    <a tabindex="0" href="#mainheader" class="hopptilmain" id="hopptilmain">Hopp til hovedinnhold</a>
 
     <a tabindex="0" href="#fag" class="hopptilmain mobileskip" id="hopptilmain2">Hopp til fag</a>
 
 
 
     <nav class="sidebar">
-        <ul>
-            <li class="sideitem0" aria-hidden="false">
-                <a href="index.html"><img class="skolelogo" src="../images/skolelogo.png"
-                    width="100" height="90" alt="skole logo">
-                </a>
+        <ul tabindex="-1">
+            <li class="sideitem0" tabindex="-1">
+
+                <figure>
+                    <a href="index.html" tabindex="0">
+                        <img tabindex="-1" class="skolelogo" src="../images/skolelogo.png" width="100" height="90"
+                            alt="banner">
+                        <figcaption tabindex="-1" id="bannertext">
+                            Hjem
+                        </figcaption>
+                    </a>
+                </figure>
+
             </li>
 
             <li class="sideitem1" id="sideitem1" aria-hidden="false">
@@ -40,10 +49,10 @@
 
         </ul>
     </nav>
-    
+
     <nav class="topbar" id="topbar">
         <ul class="toplist" id="toplist">
-            
+
             <li id="searchfield">
                 <form id="searchfield1">
                     <label for="search">
@@ -52,33 +61,50 @@
                     </label>
                 </form>
             </li>
-        
-            <li id="CalendarMenu" class="CalendarMenu">
-                <a href="calendar.html">
-                    <img class="CalendarIcon" src="../images/calendar flat.png" width="50" height="40"  alt="calendar ikon">
-                    Calendar
+
+            <li tab-index="-1" id="CalendarMenu" class="CalendarMenu">
+                <a id="calendaranchor" tab-index="0" href="calendar.html">
+                    <figure tabindex="-1" id="CalendarIkonFigure">
+                        <img tabindex="-1" class="CalendarIkon" id="CalendarIkon" src="../images/calendar flat.png"
+                            width="50" height="40" alt="calendar ikon">
+                        <figcaption tabindex="-1">
+                            Kalender
+                        </figcaption>
+                    </figure>
                 </a>
             </li>
-            
 
             <li id="ChatMenu" class="noJSChat">
-                <a href="chat.html">
-                    <img class="ChatIkon" src="../images/icons8-chat-60.png" width="50" height="40"  alt="chat ikon">
-                    Chat
+                <a tab-index="0" href="chat.html">
+                    <figure>
+                        <img class="ChatIkon" src="../images/icons8-chat-60.png" width="50" height="40" alt="chat ikon">
+                        <figcaption>
+                            Chat
+                        </figcaption>
+                    </figure>
                 </a>
             </li>
 
             <li id="Epost" class="noJSEpost">
-                <a href="#">
-                    <img class="epostIkon" src="../images/epost.svg" width="50" height="40"  alt="Epost ikon">
-                    Epost
+                <a href="#" tab-index="0">
+                    <figure>
+                        <img class="epostIkon" src="../images/epost.svg" width="50" height="40" alt="Epost ikon">
+                        <figcaption tab-index="0">
+                            Epost
+                        </figcaption>
+                    </figure>
                 </a>
             </li>
+            
 
             <li id="MinSide">
-                <a href="#">
-                    <img class="minsideIkon" src="../images/profil.png" width="50" height="40"  alt="Min Side ikon">
-                    Min Side
+                <a href="minside.html" tab-index="0">
+                    <figure>
+                        <img class="minsideIkon" src="../images/profil.png" width="50" height="40" alt="Min Side ikon">
+                        <figcaption>
+                            Min Side
+                        </figcaption>
+                    </figure>
                 </a>
             </li>
         </ul>

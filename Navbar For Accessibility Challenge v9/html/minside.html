@@ -96,8 +96,8 @@
                 </a>
             </li>
 
-            <li id="MinSide">
-                <a href="minside.html" tab-index="0">
+            <li  id="MinSide">
+                <a class="active" href="minside.html" tab-index="0">
                     <figure>
                         <img class="minsideIkon" src="../images/profil.png" width="50" height="40" alt="Min Side ikon">
                         <figcaption>
@@ -110,120 +110,104 @@
 
     </nav>
 
-    <main id="maincontent" class="maincontent">
-
-        <section id="searchfield2">
-            <form id="searchfield2.1">
-                <label for="search">
-                    <input tabindex="0" class="search noJSSearch" id="search" placeholder="Søk.." aria-label="Søk"
-                        type="search" title="Søk">
-                </label>
-            </form>
-        </section>
-
-        <div aria-hidden="true" id="mainheader"></div>
+    <main id="maincontent" class="maincontentminside maincontent">
 
 
-
-        <article id="article_profil">
-            <h2>Profil</h2>
-            <form id="navnbox">
-                Navn: <input type="text" name="navn" value="Per Hansen" readonly><br>
-            </form>
-            <form id="emailbox">
-                Email: <input type="text" name="email" value="perhansen@gmail.com" readonly><br>
-            </form>
-        </article>
-
-
-        <article id="article_farger">
-            <h2>Endre farger</h2>
-            <p>
-                Velg en farge for hvert fag:
-            </p>
-            <div id="selections">
-                <select>
-                  <option value="1">Webutvikling og inkluderende design</option>
-                  <option value="2">Programmering</option>
-                  <option value="3">Diskret matematikk</option>
-                </select>
-                <select>
-                    <option value="1">Blå</option>
-                    <option value="2">Rød</option>
-                    <option value="3">Grønn</option>
-                    <option value="4">Lilla</option>
-                    <option value="5">Gul</option>
-                </select>
-                <select>
-                  <option value="1">Webutvikling og inkluderende design</option>
-                  <option value="2">Programmering</option>
-                  <option value="3">Diskret matematikk</option>
-                </select>
-                <select>
-                    <option value="1">Blå</option>
-                    <option value="2">Rød</option>
-                    <option value="3">Grønn</option>
-                    <option value="4">Lilla</option>
-                    <option value="5">Gul</option>
-                </select>
-                <select>
-                  <option value="1">Webutvikling og inkluderende design</option>
-                  <option value="2">Programmering</option>
-                  <option value="3">Diskret matematikk</option>
-                </select>
-                <select>
-                    <option value="1">Blå</option>
-                    <option value="2">Rød</option>
-                    <option value="3">Grønn</option>
-                    <option value="4">Lilla</option>
-                    <option value="5">Gul</option>
-                </select>
-                <br \>
-                <button id="lagre" type="button">Lagre</button>
-            </div>
-        </article>
-
-        <footer class="bottomNavContainer">
-            <ul class="bottomNav" id="bottomNav">
-                <li id="tilbakeTilTopp" class="tilbakeTilTopp">
-                    <a href="#topbar">Tilbake Til Toppen</a>
-                </li>
-
-                <li id="bottomHjelp" class="bottomHjelp">
-                    <a href="#hjelp">Hjelp</a>
-                </li>
-
-                <li class="sideKart">
-                    <a href="#sideKart">Sidekart</a>
-                </li>
-            </ul>
-        </footer>
-
-    </main>
+            <article class="articleMinside" id="article_profil">
+                    <h2>Profil</h2>
+                    <form id="navnbox">
+                        Navn: <input aria-label="name" type="text" name="navn" value="Per Hansen" readonly><br>
+                    </form>
+                    <form id="emailbox">
+                        Email: <input aria-label="Email" type="text" name="email" value="perhansen@gmail.com" readonly><br>
+                    </form>
+                </article>
+        
+        
+                <article class="articleMinside" id="article_farger">
+                    <h2>Endre farger</h2>
+                    <p>
+                        Velg en farge for hvert fag:
+                    </p>
+                    <div id="selections">
+                        <select>
+                          <option value="1">Webutvikling og inkluderende design</option>
+                          <option value="2">Programmering</option>
+                          <option value="3">Diskret matematikk</option>
+                        </select>
+                        <select>
+                            <option value="1">Blå</option>
+                            <option value="2">Rød</option>
+                            <option value="3">Grønn</option>
+                            <option value="4">Lilla</option>
+                            <option value="5">Gul</option>
+                        </select>
+                        <select>
+                          <option value="1">Webutvikling og inkluderende design</option>
+                          <option value="2">Programmering</option>
+                          <option value="3">Diskret matematikk</option>
+                        </select>
+                        <select>
+                            <option value="1">Blå</option>
+                            <option value="2">Rød</option>
+                            <option value="3">Grønn</option>
+                            <option value="4">Lilla</option>
+                            <option value="5">Gul</option>
+                        </select>
+                        <select>
+                          <option value="1">Webutvikling og inkluderende design</option>
+                          <option value="2">Programmering</option>
+                          <option value="3">Diskret matematikk</option>
+                        </select>
+                        <select>
+                            <option value="1">Blå</option>
+                            <option value="2">Rød</option>
+                            <option value="3">Grønn</option>
+                            <option value="4">Lilla</option>
+                            <option value="5">Gul</option>
+                        </select>
+                        <br \>
+                        <button id="lagre" type="button">Lagre</button>
+                    </div>
+                </article>
+                <footer class="bottomNavMinside bottomNavContainer">
+                        <ul class="bottomNav" id="bottomNav">
+                          
+            
+                            <li id="bottomHjelp" class="bottomHjelp">
+                                <a href="#hjelp">Hjelp</a>
+                            </li>
+            
+                            <li class="sideKart">
+                                <a href="sitemap.html">Sidekart</a>
+                            </li>
+                        </ul>
+                    </footer>
+            </main>
 
 
 
 
 
-    <nav class="stickyfooter" id="stickyfooter" aria-hidden="true">
-        <ul class="footercontainer">
-
-            <li class="bottomitem1">
-                <a id="fag" href="#programmering">Programmering</a>
-            </li>
-
-            <li class="bottomitem2"><a href="#webutvikling">Webutvikling</a></li>
-
-            <li class="bottomitem3"><a href="#diskret">Diskret Matematikk</a></li>
-
-        </ul>
-    </nav>
-
-
-
-
-    <script type="text/javascript" src="../js/main.js"></script>
-</body>
-
-
-</html>
+            <nav class="stickyfooter" id="stickyfooter" aria-hidden="true">
+                <ul class="footercontainer">
+        
+                    <li class="bottomitem1">
+                        <a id="fag" href="#programmering">Programmering</a>
+                    </li>
+        
+                    <li class="bottomitem2"><a href="#webutvikling">Webutvikling</a></li>
+        
+                    <li class="bottomitem3"><a href="#diskret">Diskret Matematikk</a></li>
+        
+                </ul>
+            </nav>
+        
+        
+        
+        
+            <script type="text/javascript" src="../js/main.js"></script>
+        </body>
+        
+        
+        </html>
