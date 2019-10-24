@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="no" class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Min side</title>
+    <meta name="description" content="LMS skole digital læringsplattform">
+    <meta name="viewport" content="width=device-width, initial-scale=1" user-scalable=yes>
+    <link rel="stylesheet" href="../css/mystyle.css">
+    <link href='https://fonts.googleapis.com/css?family=Slabo 13px' rel='stylesheet'>
+
+</head>
+
+<body>
+
+    <a tabindex="0" href="#mainheader" class="hopptilmain" id="hopptilmain">Hopp til hovedinnhold</a>
+
+    <a tabindex="0" href="#fag" class="hopptilmain mobileskip" id="hopptilmain2">Hopp til fag</a>
+
+
+
+    <nav class="sidebar">
+        
+            <div class="sideitem0" tabindex="-1">
+
+                <figure>
+                    <a href="index.html" tabindex="0">
+                        <img tabindex="-1" class="skolelogo" src="../images/skolelogo.png" width="100" height="90"
+                            alt="banner">
+                        <figcaption tabindex="-1" id="bannertext">
+                            Hjem
+                        </figcaption>
+                    </a>
+                </figure>
+
+            </div>
+        <ul tabindex="-1">
+            <li class="sideitem1" id="sideitem1" aria-hidden="false">
+                <a href="programmering.html">Programmering</a>
+            </li>
+
+            <li class="sideitem2" id="sideitem2" aria-hidden="false">
+                <a href="programmering.html">Webutvikling</a>
+            </li>
+
+            <li class="sideitem3" id="sideitem3" aria-hidden="false"><a href="programmering.html">Diskret Matematikk</a></li>
+
+        </ul>
+    </nav>
+
+    <nav class="topbar" id="topbar">
+        <ul class="toplist" id="toplist">
+
+            <li id="searchfield">
+                <form id="searchfield1">
+                    <label for="search">
+                        <input tabindex="0" class="search noJSSearch" id="search" placeholder="Søk.." aria-label="Søk"
+                            type="search" title="Søk">
+                    </label>
+                </form>
+            </li>
+
+            <li tab-index="-1" id="CalendarMenu" class="CalendarMenu">
+                <a id="calendaranchor" tab-index="0" href="calendar.html">
+                    <figure tabindex="-1" id="CalendarIkonFigure">
+                        <img tabindex="-1" class="CalendarIkon" id="CalendarIkon" src="../images/calendar flat.png"
+                            width="50" height="40" alt="calendar ikon">
+                        <figcaption tabindex="-1">
+                            Kalender
+                        </figcaption>
+                    </figure>
+                </a>
+            </li>
+
+            <li id="ChatMenu" class="noJSChat">
+                <a tab-index="0" href="chat.html">
+                    <figure>
+                        <img class="ChatIkon" src="../images/icons8-chat-60.png" width="50" height="40" alt="chat ikon">
+                        <figcaption>
+                            Chat
+                        </figcaption>
+                    </figure>
+                </a>
+            </li>
+
+            <li id="Epost" class="noJSEpost">
+                <a href="https://login.microsoftonline.com/" target="_blank" tab-index="0">
+                    <figure>
+                        <img class="epostIkon" src="../images/epost.svg" width="50" height="40" alt="Epost ikon">
+                        <figcaption id="externallink"  tab-index="0">
+                            Epost <img width="12" src="../images/externallink.png">
+                        </figcaption>
+                    </figure>
+                </a>
+            </li>
+
+            <li id="MinSide">
+                <a href="minside.html" tab-index="0">
+                    <figure>
+                        <img class="minsideIkon" src="../images/profil.png" width="50" height="40" alt="Min Side ikon">
+                        <figcaption>
+                            Min Side
+                        </figcaption>
+                    </figure>
+                </a>
+            </li>
+        </ul>
+
+    </nav>
+
+    <main id="maincontentminside maincontent" class="maincontentminside maincontent">
+        <div aria-hidden="true" id="mainheader"></div>
+
+            <article class="articleMinside" id="article_profil">
+                    <h2>Profil</h2>
+                    <form id="navnbox">
+                        Navn: <input aria-label="name" type="text" name="navn" value="Per Hansen" readonly><br>
+                    </form>
+                    <form id="emailbox">
+                        Email: <input aria-label="Email" type="text" name="email" value="perhansen@gmail.com" readonly><br>
+                    </form>
+                </article>
+        
+        
+                <article class="articleMinside" id="article_farger">
+                    <h2>Endre farger</h2>
+                    <p>
+                        Velg en farge for hvert fag:
+                    </p>
+                    <div id="selections">
+                        
+                        <h6>Programmering</h6>
+                           
+                        
+                        <select id="mySelect1">
+                            <option value="1">Blå</option>
+                            <option value="2">Rød</option>
+                            <option value="3">Gul</option>
+                            
+                        
+                        </select>
+                        <h6>Webutvikling og inkluderende design</h6>
+                           
+                        <select id="mySelect2">
+                            <option value="1">Blå</option>
+                            <option value="2">Rød</option>
+                            <option value="3">Gul</option>
+                        </select>
+                        <h6>Diskret matematikk</h6>
+                        <select id="mySelect3">
+                            <option value="1">Blå</option>
+                            <option value="2">Rød</option>
+                            <option value="3">Gul</option>
+                        </select>
+                        <br \>
+                        <button id="lagre" type="button">Lagre</button>
+                    </div>
+                </article>
+                <footer class="bottomNavMinside bottomNavContainer">
+                        <ul class="bottomNav" id="bottomNav">
+                          
+            
+                            <li id="bottomHjelp" class="bottomHjelp">
+                                <a href="#hjelp">Hjelp</a>
+                            </li>
+            
+                            <li class="sideKart">
+                                <a href="sitemap.html">Sidekart</a>
+                            </li>
+                        </ul>
+                    </footer>
+            </main>
+
+
+
+
+
+    <nav class="stickyfooter" id="stickyfooter" aria-hidden="true">
+        <ul class="footercontainer">
+
+            <li class="bottomitem1" id="programmering">
+                <a id="fag" href="programmering.html">Programmering</a>
+            </li>
+
+            <li class="bottomitem2" id="webutvikling"><a href="programmering.html">Webutvikling</a></li>
+
+            <li class="bottomitem3" id="matematikk"><a href="programmering.html">Diskret Matematikk</a></li>
+
+        </ul>
+    </nav>
+        
+        
+        
+        
+            <script type="text/javascript" src="../js/main.js"></script>
+        </body>
+        
+        
+        </html>
