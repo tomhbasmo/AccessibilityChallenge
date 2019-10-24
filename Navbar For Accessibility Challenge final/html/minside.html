@@ -115,10 +115,13 @@
             <article class="articleMinside" id="article_profil">
                     <h2>Profil</h2>
                     <form id="navnbox">
-                        Navn: <input aria-label="name" type="text" name="navn" value="Per Hansen" readonly><br>
+                        <label for="navn">Navn:</label> 
+                        <input aria-label="name" type="text" name="navn" value="Per Hansen" readonly><br>
                     </form>
+                    <br \>
                     <form id="emailbox">
-                        Email: <input aria-label="Email" type="text" name="email" value="perhansen@gmail.com" readonly><br>
+                        <label for="email">Email:</label> 
+                        <input aria-label="Email" type="text" name="email" value="perhansen@gmail.com" readonly><br>
                     </form>
                 </article>
         
@@ -132,27 +135,29 @@
                         
                         <h6>Programmering</h6>
                            
-                        
-                        <select id="mySelect1">
-                            <option value="1">Blå</option>
-                            <option value="2">Rød</option>
-                            <option value="3">Gul</option>
-                            
-                        
-                        </select>
+                        <label for="mySelect1">
+                            <select id="mySelect1">
+                                <option value="1">Blå</option>
+                                <option value="2">Rød</option>
+                                <option value="3">Gul</option>
+                            </select>
+                        </label>
                         <h6>Webutvikling og inkluderende design</h6>
-                           
-                        <select id="mySelect2">
-                            <option value="1">Blå</option>
-                            <option value="2">Rød</option>
-                            <option value="3">Gul</option>
-                        </select>
+                        <label for="mySelect2"> 
+                            <select id="mySelect2" name="fargevalg">
+                                <option value="1">Blå</option>
+                                <option value="2">Rød</option>
+                                <option value="3">Gul</option>
+                            </select>
+                        </label>
                         <h6>Diskret matematikk</h6>
-                        <select id="mySelect3">
-                            <option value="1">Blå</option>
-                            <option value="2">Rød</option>
-                            <option value="3">Gul</option>
-                        </select>
+                        <label for="mySelect3">
+                            <select id="mySelect3" name="fargevalg">
+                                <option value="1">Blå</option>
+                                <option value="2">Rød</option>
+                                <option value="3">Gul</option>
+                            </select>
+                        </label>
                         <br \>
                         <button id="lagre" type="button">Lagre</button>
                     </div>
