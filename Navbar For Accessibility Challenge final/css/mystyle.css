@@ -8,13 +8,13 @@ body {
 }
 
 .blueC{
-    background-color: blue !important;
+    background-color: #B2FFFF !important;
     }
     .redC{
-        background-color: red !important;
+        background-color: #FFD8F9 !important;
     }
     .yellowC{
-        background-color: yellow !important;
+        background-color:  #FFFFAA !important;
     }
     h6{
         margin: 0;
